@@ -16,4 +16,5 @@ Neste form foi usado apenas JavaScript, CSS e HTML.
 [CSS Animation Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
 
 [Animation Timing Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function)
+[Mayki Brito](https://github.com/matheus-santos-moreira/youtube-form-animate-css-js-puro)
 
