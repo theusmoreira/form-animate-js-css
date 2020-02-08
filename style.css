@@ -71,8 +71,7 @@
 
   /*Aparição do from*/
 form {
-  animation-name: fade;
-  animation-duration: 500ms;
+  animation: fade 500ms;
 }
   @keyframes fade {
     from{
@@ -122,5 +121,53 @@ form {
     }
     to {
       transform: translateY(100vh);
+    }
+  }
+
+  /*Form no-no*/
+
+  form.validate-error {
+    animation: nono 200ms linear, fade paused;
+    animation-iteration-count: 2;
+  }
+
+  @keyframes nono {
+    0%,
+    100%{
+      transform: translateX(0%);
+    }
+    35%{
+      transform: translateX(-15%);
+    }
+    70%{
+      transform: translateX(15%);
+    }
+  }
+
+  /*squares*/
+body {
+  overflow: hidden;
+}
+  .squares li {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.15);
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    animation: up 2s infinite alternate;
+  }
+
+  @keyframes up {
+    form {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    50%{
+      opacity: 1;
+    }
+    to{
+      opacity: 0;
+      transform: translateY(-900px) rotate(960deg);
     }
   }
